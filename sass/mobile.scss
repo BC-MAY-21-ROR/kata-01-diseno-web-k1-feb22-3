@@ -180,56 +180,69 @@ footer {
       width: 100%;
     }
   }
+  
+  
 
-  .contact-info {
-    display: flex;
-    margin-top: 1.7rem;
-    margin-bottom: 1rem;
-    font-size: 2.6rem;
-    padding-right: 0.8rem;
+  .info {
+    .contact {
+      .contact-info {
+        display: flex;
+        margin-top: 1.7rem;
+        margin-bottom: 1rem;
+        font-size: 2.6rem;
+        padding-right: 0.8rem;
 
-    figure {
-      margin-top: 0;
-      width: 1.8rem;
-      margin-right: 1.8rem;
-      img {
-        width: 100%;
+        figure {
+          margin-top: 0;
+          width: 1.8rem;
+          margin-right: 1.8rem;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      #local {
+        width: 3.7rem;
       }
     }
-  }
 
-  #local {
-    width: 3.7rem;
-  }
-
-  div {
-    margin-top: 4rem;
-    ul {
-      font-size: 3rem;
-      list-style: none;
-      li {
-        margin-bottom: 2rem;
+    .list {
+      margin-top: 4rem;
+      ul {
+        font-size: 3rem;
+        list-style: none;
+        li {
+          margin-bottom: 2rem;
+        }
       }
     }
-  }
 
-  .social {
-    margin-top: 2.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    div {
-      margin: 0;
-      width: 3rem;
-      height: 3rem;
-      display: grid;
-      place-items: center;
-      border: 1px solid white;
-      border-radius: 50%;
-    }
-    div:hover {
-      border: 1px solid $primaryColor;
+    .social {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      div {
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        display: grid;
+        place-items: center;
+        border: 1px solid white;
+        border-radius: 50%;
+        i {
+          font-size: 1.2rem;
+        }  
+      }
+      div:hover {
+        border: 1px solid $primaryColor;
+        cursor: pointer;
+        i{
+          color: $primaryColor;          
+        }
+      }
     }
   }
 
@@ -238,4 +251,5 @@ footer {
     text-align: center;
     margin-bottom: 1.5rem;
   }
+
 }

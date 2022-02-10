@@ -35,6 +35,7 @@ header nav .secundary-btn {
   border: none;
   border-radius: 10px;
   box-shadow: 0 0rem 1rem 0rem rgba(0, 0, 0, 0.2);
+  border-radius: 4rem;
   font-size: 1.5rem;
   font-weight: 700;
   padding: 0rem 2rem 0.5rem;
@@ -159,42 +160,42 @@ footer figure {
 footer figure img {
   width: 100%;
 }
-footer .contact-info {
+footer .info .contact .contact-info {
   display: flex;
   margin-top: 1.7rem;
   margin-bottom: 1rem;
   font-size: 2.6rem;
   padding-right: 0.8rem;
 }
-footer .contact-info figure {
+footer .info .contact .contact-info figure {
   margin-top: 0;
   width: 1.8rem;
   margin-right: 1.8rem;
 }
-footer .contact-info figure img {
+footer .info .contact .contact-info figure img {
   width: 100%;
 }
-footer #local {
+footer .info .contact #local {
   width: 3.7rem;
 }
-footer div {
+footer .info .list {
   margin-top: 4rem;
 }
-footer div ul {
+footer .info .list ul {
   font-size: 3rem;
   list-style: none;
 }
-footer div ul li {
+footer .info .list ul li {
   margin-bottom: 2rem;
 }
-footer .social {
+footer .info .social {
   margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
-footer .social div {
+footer .info .social div {
   margin: 0;
   width: 3rem;
   height: 3rem;
@@ -203,8 +204,15 @@ footer .social div {
   border: 1px solid white;
   border-radius: 50%;
 }
-footer .social div:hover {
+footer .info .social div i {
+  font-size: 1.2rem;
+}
+footer .info .social div:hover {
   border: 1px solid #ff52bf;
+  cursor: pointer;
+}
+footer .info .social div:hover i {
+  color: #ff52bf;
 }
 footer span {
   font-size: 1.1rem;
