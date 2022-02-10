@@ -8,8 +8,8 @@ $grayish_Blue: hsl(208, 11%, 55%);
 @mixin box {
   background-color: white;
   border: none;
-  border-radius: 20px;
-  box-shadow: 0 0.2rem 0.7rem 0rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0rem 1rem 0rem rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -17,6 +17,9 @@ $grayish_Blue: hsl(208, 11%, 55%);
   padding: 0;
   margin: 0;
   font-size: 62.5%;
+}
+h1, h2 {
+  color: $very_Dark_Cyan;
 }
 
 header {
@@ -42,7 +45,7 @@ header {
 
     .secundary-btn {
       @include box;
-
+      border-radius: 4rem;
       font-size: 1.5rem;
       font-weight: 700;
       padding: 0rem 2rem 0.5rem;
@@ -59,29 +62,35 @@ header {
     }
   }
 
-  .header-text {
-    margin: 0 3rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header-text {
+      margin: 0 3rem;
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2.7rem;
+        font-weight: 600;
+      }
+  
+      p {
+        font-family: $font-body;
+        font-size: 1.65rem;
+        margin-bottom: 3.6rem;
+        font-weight: 300;
+      }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 2.7rem;
-      font-weight: 600;
     }
-
-    p {
-      font-family: $font-body;
-      font-size: 1.65rem;
-      margin-bottom: 3.6rem;
-      font-weight: 300;
-    }
-  }
-
-  figure {
-    width: 80vw;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    img {
-      width: 100%;
+  
+    figure {
+      width: 80vw;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -91,15 +100,15 @@ header {
   font-size: 1rem;
   background-color: $primaryColor;
   padding: 1rem 3rem 1.4rem 3rem;
-  border-radius: 20px;
+  border-radius: 50px;
   color: white;
   border: none;
-  box-shadow: 0 0.5em 1em 0em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2em 0.5em 0em rgba(0, 0, 0, 0.2);
   width: 80%;
   margin-bottom: 3rem;
 }
 
-.box {
+.card {
   @include box;
   padding: 1rem 3rem;
   text-align: center;
@@ -135,7 +144,7 @@ header {
   padding: 1rem 3.5rem;
 }
 
-.last_box {
+.last_card {
   top: 70px;
   margin: 0 1.5rem;
   padding: 1.9rem 1.5rem 0.7rem;

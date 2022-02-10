@@ -1,9 +1,94 @@
-header .introduction {
-  display: flex;
+header {
+  padding: 2.3rem 7.5rem;
+  background-image: url("../images/bg-hero-desktop.svg");
+  margin-bottom: 12rem;
 }
-header .header-text {
-  width: 300px;
+header nav {
+  margin-bottom: 4rem;
+}
+header nav figure {
+  width: 20rem;
+}
+header nav .secundary-btn {
+  font-size: 2rem;
+  padding: 0.5rem 5.5rem 1rem;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+header div .header-text {
+  margin: 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  align-items: flex-start;
+}
+header div .header-text h1 {
+  font-size: 4rem;
+}
+header div .header-text p {
+  font-size: 1.8rem;
+}
+header div .header-text button {
+  width: 55%;
+  padding: 1.8rem 3rem 2.3rem;
+  font-size: 1.35rem;
+}
+header div figure {
+  width: 53%;
+}
+
+.card {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 4rem 9rem 2rem;
+}
+.card div {
+  margin-left: 10rem;
+  width: 50%;
+  text-align: left;
+}
+.card div h2 {
+  font-size: 3rem;
+}
+.card div p {
+  font-size: 2rem;
+}
+.card figure {
+  margin-left: 12rem;
+  width: 45rem;
+}
+
+.card:nth-child(2) {
+  flex-direction: row;
+}
+
+.card:last-child {
+  margin: auto;
+  flex-direction: column;
+  padding: 3.2rem 9rem 2rem;
+  width: 55%;
+}
+.card:last-child h2 {
+  font-size: 3.2rem;
+}
+.card:last-child button {
+  width: 70%;
+  padding: 2rem 3rem 2.4rem;
+  font-size: 3.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+footer {
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=desktop.css.map */
