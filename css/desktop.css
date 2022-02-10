@@ -1,0 +1,9 @@
+header .introduction {
+  display: flex;
+}
+header .header-text {
+  width: 300px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=desktop.css.map */
